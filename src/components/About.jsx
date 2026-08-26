@@ -37,12 +37,16 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-        sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea
-        quaerat alias accusamus voluptas autem! Alias odit voluptates in totam
-        vitae dignissimos minus eaque culpa unde tempore dolore aperiam
-        obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde
-        veniam dolorum ipsum doloribus.
+        I'm a cybersecurity professional with a Master's degree in Cybersecurity
+        and hands-on experience in IT audit, risk, and compliance. I have led
+        security audits for a major national telecom operator and managed
+        security and compliance for a national financial platform built for and
+        with BEAC and CNEF Cameroon. My work covers three areas: security
+        operations (SOC, firewalls, incident response), security testing
+        (penetration testing and web application security), and IT governance
+        (ISO 27001, NIST, COBIT). I write clear reports, explain security to
+        non-technical teams, and help organizations protect sensitive financial
+        and personal data.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

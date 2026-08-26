@@ -29,16 +29,16 @@ const Contact = () => {
     //click on create a new template then click on save.
     emailjs
       .send(
-        'serviceID', // paste your ServiceID here (you'll get one when your service is created).
-        'templateID', // paste your TemplateID here (you'll find it under email templates).
+        'serviceID', // TODO: paste your EmailJS ServiceID here.
+        'templateID', // TODO: paste your EmailJS TemplateID here.
         {
           from_name: form.name,
-          to_name: 'YourName', // put your name here.
+          to_name: 'Junior Mohyen Takouteu',
           from_email: form.email,
-          to_email: 'youremail@gmail.com', //put your email here.
+          to_email: 'mtakouteu@gmail.com',
           message: form.message,
         },
-        'yourpublickey' //paste your Public Key here. You'll get it in your profile section.
+        'yourpublickey' // TODO: paste your EmailJS Public Key here.
       )
       .then(
         () => {
@@ -144,6 +144,50 @@ const Contact = () => {
             />
           </button>
         </form>
+      </motion.div>
+
+      <motion.div
+        variants={slideIn('right', 'tween', 0.2, 1)}
+        className="flex-[0.75] xl:mt-[6rem] mt-0 flex flex-col justify-center gap-8">
+        <p className={styles.sectionSubText}>Reach me directly</p>
+        <div className="flex flex-col gap-6 font-poppins">
+          <div className="flex flex-col">
+            <span className="text-taupe text-[15px] uppercase tracking-[2px]">
+              Email
+            </span>
+            <a
+              href="mailto:mtakouteu@gmail.com"
+              className="text-timberWolf text-[20px] font-medium hover:text-taupe transition duration-[0.2s]">
+              mtakouteu@gmail.com
+            </a>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-taupe text-[15px] uppercase tracking-[2px]">
+              Phone
+            </span>
+            <a
+              href="tel:+237671060325"
+              className="text-timberWolf text-[20px] font-medium hover:text-taupe transition duration-[0.2s]">
+              +237 671 06 03 25
+            </a>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-taupe text-[15px] uppercase tracking-[2px]">
+              Location
+            </span>
+            <p className="text-timberWolf text-[20px] font-medium">
+              Bafoussam, Cameroon
+            </p>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-taupe text-[15px] uppercase tracking-[2px]">
+              Languages
+            </span>
+            <p className="text-timberWolf text-[20px] font-medium">
+              French (native) · English (fluent)
+            </p>
+          </div>
+        </div>
       </motion.div>
     </div>
   );

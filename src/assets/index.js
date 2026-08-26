@@ -3,15 +3,12 @@ import nairobi from './backgrounds/nairobi.png';
 import whiteabstract from './backgrounds/white-abstract.png';
 import worldmap from './backgrounds/world-map.png';
 
-import logo from './logo/logo-black.png';
-import logotext from './logo/logo-text-black.png';
+import profile from './personal/profile.png';
 
-import shaq from './personal/shaq.png';
-
-import backend from './icons/backend.png';
-import ux from './icons/ux.png';
-import frontend from './icons/frontend.png';
-import prototyping from './icons/prototyping.png';
+import audit from './icons/audit.svg';
+import secops from './icons/secops.svg';
+import pentest from './icons/pentest.svg';
+import governance from './icons/governance.svg';
 import github from './icons/github.png';
 import close from './icons/close.png';
 import download from './icons/download.png';
@@ -23,25 +20,23 @@ import resume from './icons/resume.png';
 import send from './icons/send.png';
 import sendHover from './icons/sendHover.png';
 
-import css from './tech/css.png';
-import docker from './tech/docker.png';
-import figma from './tech/figma.png';
-import git from './tech/git.png';
-import html from './tech/html.png';
+import nmap from './tech/nmap.png';
+import burpsuite from './tech/burpsuite.png';
+import metasploit from './tech/metasploit.png';
+import wazuh from './tech/wazuh.png';
+import volatility from './tech/volatility.png';
+import autopsy from './tech/autopsy.png';
+import python from './tech/python3.png';
+import bash from './tech/bash.png';
 import javascript from './tech/javascript.png';
-import nodejs from './tech/nodejs.png';
 import reactjs from './tech/reactjs.png';
-import redux from './tech/redux.png';
-import tailwind from './tech/tailwind.png';
-import typescript from './tech/typescript.png';
-import graphql from './tech/graphql.png';
-import postgresql from './tech/postgresql.png';
-import rubyrails from './tech/rubyrails.png';
 
-import coverhunt from './company/coverhunt.png';
-import dcc from './company/dcc.png';
-import kelhel from './company/kelhel.png';
-import microverse from './company/microverse.png';
+import infopro from './company/infopro.svg';
+import antic from './company/antic.svg';
+import nextscript from './company/nextscript.svg';
+import bit from './company/bit.svg';
+import insam from './company/insam.svg';
+import quickdo from './company/quickdo.svg';
 
 import komikult from './projects/komikult.png';
 import leaderboard from './projects/leaderboard.png';
@@ -55,13 +50,11 @@ export {
   nairobi,
   whiteabstract,
   worldmap,
-  logo,
-  logotext,
-  shaq,
-  backend,
-  ux,
-  frontend,
-  prototyping,
+  profile,
+  audit,
+  secops,
+  pentest,
+  governance,
   github,
   close,
   download,
@@ -72,28 +65,26 @@ export {
   resume,
   send,
   sendHover,
-  css,
-  docker,
-  figma,
-  git,
-  graphql,
-  html,
+  nmap,
+  burpsuite,
+  metasploit,
+  wazuh,
+  volatility,
+  autopsy,
+  python,
+  bash,
   javascript,
-  nodejs,
-  postgresql,
-  rubyrails,
   reactjs,
-  redux,
-  tailwind,
-  typescript,
+  infopro,
+  antic,
+  nextscript,
+  bit,
+  insam,
+  quickdo,
   komikult,
   leaderboard,
   math,
   movie,
   nyeusi,
   space,
-  coverhunt,
-  dcc,
-  kelhel,
-  microverse,
 };
