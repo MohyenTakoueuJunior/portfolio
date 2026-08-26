@@ -92,7 +92,7 @@ const Experience = () => {
               </div>
             }>
             <a
-              href="/Junior-Mohyen-Takouteu-Resume.pdf"
+              href={`${import.meta.env.BASE_URL}Junior-Mohyen-Takouteu-Resume.pdf`}
               download="Junior-Mohyen-Takouteu-Resume.pdf"
               className="live-demo flex justify-between
               sm:text-[18px] text-[14px] text-timberWolf
