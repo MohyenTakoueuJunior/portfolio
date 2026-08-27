@@ -1,4 +1,4 @@
-import { BallCanvas } from './canvas';
+import { BallsCanvas } from './canvas';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import About from './About';
@@ -8,4 +8,4 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Certifications from './Certifications';
 
-export { Hero, Navbar, About, Tech, Experience, Projects, Contact, BallCanvas, Certifications };
+export { Hero, Navbar, About, Tech, Experience, Projects, Contact, BallsCanvas, Certifications };

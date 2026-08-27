@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { BallCanvas } from './canvas';
+import { BallsCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { technologies } from '../constants';
 import { styles } from '../styles';
@@ -7,10 +7,10 @@ import { textVariant } from '../utils/motion';
 import { useMediaQuery } from '../hooks/useMediaQuery';
 
 const Tech = () => {
-  // Every BallCanvas opens its own WebGL context. Mobile browsers cap the
-  // number of live contexts (~8) and silently drop the oldest ones, which
-  // blanked the first few balls. Fall back to flat icons on small screens.
-  const showBalls = useMediaQuery('(min-width: 640px)');
+  const isLg = useMediaQuery('(min-width: 1025px)');
+  const isSm = useMediaQuery('(min-width: 640px)');
+  const columns = isLg ? 6 : isSm ? 4 : 3;
+  const rows = Math.ceil(technologies.length / columns);
 
   return (
     <>
@@ -19,25 +19,10 @@ const Tech = () => {
         <h2 className={styles.sectionHeadTextLight}>Technologies.</h2>
       </motion.div>
 
-      <div className="flex flex-wrap justify-center gap-10 mt-14">
-        {technologies.map((technology) => (
-          <div className="w-28 h-28" key={technology.name}>
-            {showBalls ? (
-              <BallCanvas icon={technology.icon} />
-            ) : (
-              <div
-                className="w-full h-full rounded-full bg-jetLight 
-                  flex justify-center items-center">
-                <img
-                  src={technology.icon}
-                  alt={technology.name}
-                  loading="lazy"
-                  className="w-3/5 h-3/5 object-contain"
-                />
-              </div>
-            )}
-          </div>
-        ))}
+      <div
+        className="mt-14 w-full max-w-[1000px] mx-auto"
+        style={{ aspectRatio: `${columns} / ${rows}` }}>
+        <BallsCanvas technologies={technologies} columns={columns} />
       </div>
     </>
   );
