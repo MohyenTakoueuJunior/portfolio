@@ -79,8 +79,8 @@ const ProjectCard = ({
               className="live-demo flex justify-between 
               sm:text-[16px] text-[14px] text-timberWolf 
               font-bold font-beckman items-center py-5 pl-2 pr-3 
-              whitespace-nowrap gap-1 sm:w-[138px] sm:h-[50px] 
-              w-[125px] h-[46px] rounded-[10px] glassmorphism 
+              whitespace-nowrap gap-1 sm:w-[190px] sm:h-[50px] 
+              w-[172px] h-[46px] rounded-[10px] glassmorphism 
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
@@ -101,7 +101,7 @@ const ProjectCard = ({
                 className="btn-icon sm:w-[34px] sm:h-[34px] 
                   w-[30px] h-[30px] object-contain"
               />
-              LIVE DEMO
+              VIEW ON GITHUB
             </button>
           </div>
         </>
@@ -116,7 +116,7 @@ const Projects = () => {
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>Case Studies</p>
+        <p className={`${styles.sectionSubText} `}>Security Case Studies</p>
         <h2 className={`${styles.sectionHeadTextLight}`}>Projects.</h2>
       </motion.div>
 
@@ -124,11 +124,10 @@ const Projects = () => {
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-          These projects demonstrate my expertise with practical examples of
-          some of my work, including brief descriptions and links to code
-          repositories and live demos. They showcase my ability to tackle
-          intricate challenges, adapt to various technologies, and efficiently
-          oversee projects.
+          These projects cover the offensive and defensive sides of my
+          security work — reconnaissance and exploitation, detection
+          engineering, digital forensics and incident response, and compliance
+          automation. Each one links to the source and write-up on my GitHub.
         </motion.p>
       </div>
 

@@ -1,12 +1,6 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import {
-  Decal,
-  Float,
-  OrbitControls,
-  Preload,
-  useTexture,
-} from '@react-three/drei';
+import { Decal, Float, Preload, useTexture } from '@react-three/drei';
 import Loader from '../Loader';
 
 const Ball = (props) => {
@@ -37,9 +31,14 @@ const Ball = (props) => {
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
+    // No OrbitControls: the balls keep their Float animation but are not
+    // draggable. pointerEvents none lets touches fall through to the page so
+    // swiping over a ball scrolls instead of grabbing the canvas.
+    <Canvas
+      frameloop="always"
+      gl={{ preserveDrawingBuffer: true }}
+      style={{ pointerEvents: 'none' }}>
       <Suspense fallback={<Loader />}>
-        <OrbitControls enableZoom={false} position0={0} />
         <Ball imgUrl={icon} />
       </Suspense>
 
