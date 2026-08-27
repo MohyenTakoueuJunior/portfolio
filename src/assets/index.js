@@ -45,6 +45,12 @@ import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
 
+import badge1 from './Badges/EHE_8564B4DE34FE.png';
+import badge2 from './Badges/api-authentication-2-hours.png';
+import badge3 from './Badges/fortinet-fortigate-7-6-operator.png';
+import badge4 from './Badges/fortinet-nse-3-certified-in-cybersecurity.1.png';
+import badge5 from './Badges/google-cybersecurity-professional-certificate-v2.png';
+
 export {
   bwmap,
   nairobi,
@@ -87,4 +93,9 @@ export {
   movie,
   nyeusi,
   space,
+  badge1,
+  badge2,
+  badge3,
+  badge4,
+  badge5,
 };

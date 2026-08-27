@@ -26,6 +26,11 @@ import {
   bit,
   insam,
   quickdo,
+  badge1,
+  badge2,
+  badge3,
+  badge4,
+  badge5,
 } from '../assets';
 
 export const navLinks = [
@@ -269,4 +274,27 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+const certifications = [
+  {
+    name: 'CEH',
+    icon: badge1,
+  },
+  {
+    name: 'API Authentication',
+    icon: badge2,
+  },
+  {
+    name: 'Fortinet Operator',
+    icon: badge3,
+  },
+  {
+    name: 'Fortinet NSE 3',
+    icon: badge4,
+  },
+  {
+    name: 'Google Cybersecurity',
+    icon: badge5,
+  },
+];
+
+export { services, technologies, experiences, projects, certifications };
