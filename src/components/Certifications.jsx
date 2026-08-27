@@ -19,8 +19,8 @@ const Certifications = () => {
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My achievements</p>
-        <h2 className={`${styles.sectionHeadText} text-[#D4D4D8]`}>Certifications.</h2>
+        <p className={styles.sectionSubTextLight}>My achievements</p>
+        <h2 className={styles.sectionHeadTextLight}>Certifications.</h2>
       </motion.div>
 
       <div className="flex flex-wrap justify-center gap-10 mt-14">
